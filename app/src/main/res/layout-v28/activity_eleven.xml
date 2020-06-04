@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ElevenActivity">
+
+
+    <ImageView
+        android:id="@+id/minew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        
+        android:layout_marginTop="@dimen/aa"
+        android:layout_marginLeft="@dimen/aa"
+        android:layout_marginRight="@dimen/aa"
+        android:layout_marginBottom="@dimen/aa"
+        android:layout_weight="1"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/counting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:textFontWeight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:background="#CDDD99"
+            android:text="@string/counting_sort"
+            android:textColor="#00897B"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+    </ScrollView>
+</LinearLayout>

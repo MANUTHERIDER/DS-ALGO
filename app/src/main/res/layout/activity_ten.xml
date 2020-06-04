@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".NineActivity">
+
+    <ImageView
+        android:id="@+id/minew"
+        android:layout_width="391dp"
+        android:layout_height="235dp"
+        android:layout_gravity="top"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/todo"
+        android:foregroundGravity="top"
+        android:src="@drawable/fobonaci"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/manu"
+        android:layout_width="match_parent"
+        android:layout_height="491dp"
+        android:layout_below="@id/minew"
+        android:layout_gravity="bottom"
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CDDD99"
+            android:gravity="bottom"
+            android:text="@string/kmp_algo"
+            android:textColor="#00897B"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+    </ScrollView>
+</RelativeLayout>

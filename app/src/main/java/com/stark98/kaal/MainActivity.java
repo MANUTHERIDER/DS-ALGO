@@ -2,50 +2,108 @@ package com.stark98.kaal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button firstButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        firstButton=findViewById(R.id.textView);
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(MainActivity.this,SecondActivity.class);
+                startActivity(intent_one);
+            }
+        });
+        firstButton=findViewById(R.id.textView2);
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(MainActivity.this,ThirdActivity.class);
+                startActivity(intent_one);
+            }
+        });
+        firstButton=findViewById(R.id.textView3);
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(MainActivity.this,FourActivity.class);
+                startActivity(intent_one);
+            }
+        });
+        firstButton=findViewById(R.id.textView4);
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(MainActivity.this,FiveActivity.class);
+                startActivity(intent_one);
+            }
+        });
+        firstButton=findViewById(R.id.textView5);
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(MainActivity.this,SixActivity.class);
+                startActivity(intent_one);
+            }
+        });
+        firstButton=findViewById(R.id.textView6);
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(MainActivity.this,SevenActivity.class);
+                startActivity(intent_one);
+            }
+        });
+        firstButton=findViewById(R.id.textView7);
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(MainActivity.this,EightActivity.class);
+                startActivity(intent_one);
+            }
+        });
+        firstButton=findViewById(R.id.textView8);
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(MainActivity.this,NineActivity.class);
+                startActivity(intent_one);
+            }
+        });
+        firstButton=findViewById(R.id.textView9);
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(MainActivity.this,TenActivity.class);
+                startActivity(intent_one);
+            }
+        });
+        firstButton=findViewById(R.id.textView10);
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(MainActivity.this,ElevenActivity.class);
+                startActivity(intent_one);
+            }
+        }); firstButton=findViewById(R.id.textView11);
+        firstButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(MainActivity.this,TwelveActivity.class);
+                startActivity(intent_one);
+            }
+        });
     }
 
-    public void prm_number(View view) {
-    }
-
-    public void rabin_sort(View view) {
-    }
-
-    public void cuntng_srt(View view) {
-        Toast.makeText(this, "App is in under Development", Toast.LENGTH_SHORT).show();
-    }
-
-    public void kmp_algo(View view) {
-    }
-
-    public void bble_srt(View view) {
-    }
-
-    public void bnry_srt(View view) {
-    }
-
-    public void fnbci_sres(View view) {
-    }
-
-    public void linr_srt(View view) {
-    }
-
-    public void mrg_srt(View view) {
-    }
-
-    public void cmpst_sers(View view) {
-    }
-
-    public void quk_srt(View view) {
-
-    }
 }

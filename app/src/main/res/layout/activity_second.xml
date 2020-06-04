@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+
+        <ImageView
+            android:id="@+id/minew"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:layout_above="@id/textView12"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="top"
+            android:foregroundGravity=""
+            android:contentDescription="@string/todo"
+            android:src="@drawable/hanoi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/minew">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:background="#CDDD99"
+            android:text="@string/prime_number"
+            android:textColor="#00897B"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+    </ScrollView>
+</LinearLayout>

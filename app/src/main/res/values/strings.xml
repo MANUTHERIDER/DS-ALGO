@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KaaL</string>
+    <string name="app_name">DS ALGO</string>
     <string name="_11_rabin_corasick">11. Rabin Corasick</string>
     <string name="_10_counting_sort">10 Counting Sort</string>
     <string name="_9_kmp_algorithms">9 KMP Algorithms</string>
@@ -12,4 +12,200 @@
     <string name="_2_quick_sort">2. Quick Sort</string>
     <string name="_1_prime_number">1. Prime Number</string>
     <string name="todo">TODO</string>
+    <string name="prime_number" translatable="false">
+        <u><b>PRIME NUMBER</b></u><hr />\n\n
+        A prime number is a natural number\n
+        greater than 1 that is not a product\n
+        of two smaller natural numbers.A\n
+        natural number greater than 1 that\n
+        is not prime is called a composite\n
+        number. For example, 5 is prime\n
+        because the only ways of writing\n
+        it as a product, 1 × 5 or 5 × 1,\n
+        involve 5 itself.\n\n
+
+        For more details: <a herf="https://www.geeksforgeeks.org/prime-numbers/">Click Here</a>
+    </string>
+    <string name="quk_srt">
+
+        <u><b>Quick Sort</b></u><hr /> \n\n
+        Like Merge Sort, QuickSort is a \n
+        Divide and Conquer algorithm. \n
+        It picks an element as pivot and\n
+        partitions the given array around\n
+        the picked pivot. There are many\n
+        different versions of quickSort\n
+        that pick pivot in different ways.\n
+
+        Always pick first element as pivot.\n
+        Always pick last element as pivot (implemented below)\n
+        Pick a random element as pivot.\n
+        Pick median as pivot.\n
+        The key process in quickSort is partition().\n
+        Target of partitions is, given an array and\n
+        an element x of array as pivot, put x at its\n
+        correct position in sorted array and put all\n
+        smaller elements (smaller than x) before x,\n
+        and put all greater elements (greater than x)\n
+        after x. All this should be done in linear time.\n
+    For more details: <a herf="https://www.geeksforgeeks.org/prime-numbers/">Click Here</a>\n
+    </string>
+    <string name="composite_number" translatable="true">
+                  <u><b>Composite Number</b></u><hr /> \n\n
+
+        A whole number that can be made by multiplying
+        other whole numbers. Example: 6 can be made by
+        2 × 3 so is a composite number. But 7 can not
+        be made by multiplying other whole numbers
+        (1×7 would work, but we said to use other
+        whole numbers) so is not a composite number,
+        it is a prime number.\n\n
+
+            For more details: <a herf="https://www.geeksforgeeks.org/prime-numbers/">Click Here</a>\n
+
+    </string>
+    <string name="merge_sort" translatable="false">
+        <u><b>Merge Sort</b></u><hr /> \n\n
+Like QuickSort, Merge Sort is a Divide and Conquer
+algorithm. It divides input array in two halves,
+calls itself for the two halves and then merges
+the two sorted halves. The merge() function is
+used for merging two halves. The
+merge(arr, l, m, r) is key process that assumes
+that arr[l..m] and arr[m+1..r] are sorted and
+merges the two sorted sub-arrays into one.
+Above diagram from wikipedia shows the
+complete merge sort process for an example
+array {38, 27, 43, 3, 9, 82, 10}. If we
+take a closer look at the diagram, we can
+see that the array is recursively divided
+in two halves till the size becomes
+1. Once the size becomes 1, the merge processes
+comes into action and starts merging arrays back
+till the complete array is merged.\n\n
+            For more details: <a herf="https://www.geeksforgeeks.org/prime-numbers/">Click Here</a>\n
+
+
+    </string>
+    <string name="linear_search" translatable="false">
+        <u><b> Linear search</b></u><hr /> \n\n
+In computer science, a linear search or sequential
+search is a method for finding an element within
+a list. It sequentially checks each element of the
+list until a match is found or the whole list has
+been searched.
+A linear search runs in at worst linear time and
+makes at most n comparisons, where n is the length
+of the list. If each element is equally likely to
+be searched, then linear search has an average
+case of n+1 divided by 2
+comparisons, but the average case can be affected
+if the search probabilities for each element vary.
+Linear search is rarely practical because other
+search algorithms and schemes, such as the binary
+search algorithm and hash tables, allow significantly
+faster searching for all but short lists.
+                    For more details: <a herf="https://www.geeksforgeeks.org/prime-numbers/">Click Here</a>\n
+
+    </string>
+
+    <string name="fibonacci_series" translatable="false">
+                           <u><b>  Fibonacci search technique </b></u><hr /> \n\n
+
+In computer science, the Fibonacci search technique
+is a method of searching a sorted array using a
+divide and conquer algorithm that narrows down
+possible locations with the aid of Fibonacci
+numbers.Compared to binary search where
+the sorted array is divided into two equal-sized
+parts, one of which is examined further, Fibonacci
+search divides the array into two parts that have
+sizes that are consecutive Fibonacci numbers.
+On average, this leads to about 4% more comparisons
+to be executed,but it has the advantage that one
+only needs addition and subtraction to calculate the
+indices of the accessed array elements, while classical
+binary search needs bit-shift, division or multiplication,
+operations that were less common at the time Fibonacci
+search was first published. Fibonacci search has an
+average- and worst-case complexity of O(log n)\n\n
+        For more details: <a herf="https://www.geeksforgeeks.org/prime-numbers/">Click Here</a>\n
+    </string>
+    <string name="binary_search" translatable="false">
+         <u><b> Binary search algorithm  </b></u><hr /> \n\n
+
+In computer science, binary search, also known as
+half-interval search, logarithmic search, or
+binary chop,is a search algorithm that finds the
+position of a target value within a sorted array.
+Binary search compares the target value to the middle
+element of the array. If they are not equal, the half
+in which the target cannot lie is eliminated and the
+search continues on the remaining half, again taking
+the middle element to compare to the target value, and
+repeating this until the target value is found. If the
+search ends with the remaining half being empty, the target
+is not in the array.
+
+Binary search runs in logarithmic time in the worst case,
+making O(\log n) comparisons, where n is the number of
+elements in the array, the O is Big O notation, and log
+is the logarithm. Binary search is faster than linear
+search except for small arrays. However, the array must be
+sorted first to be able to apply binary search. There are
+specialized data structures designed for fast searching,
+such as hash tables, that can be searched more efficiently
+than binary search. However, binary search can be used to
+solve a wider range of problems, such as finding the next-
+smallest or next-largest element in the array relative to the target even if it is absent from the array.
+
+Algorithm
+Binary search works on sorted arrays. Binary search begins by comparing an element in the middle of the array with the target value. If the target value matches the element, its position in the array is returned. If the target value is less than the element, the search continues in the lower half of the array. If the target value is greater than the element, the search continues in the upper half of the array. By doing this, the algorithm eliminates the half in which the target value cannot lie in each iteration.\n\n
+
+        For more details: <a herf="https://www.geeksforgeeks.org/prime-numbers/">Click Here</a>\n
+
+    </string>
+    <string name="bubble_sort" translatable="false">
+   <u><b>  Bubble sort </b></u><hr /> \n\n
+
+Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list.
+
+This simple algorithm performs poorly in real world use and is used primarily as an educational tool. More efficient algorithms such as timsort, or merge sort are used by the sorting libraries built into popular programming languages such as Python and Java.\n\n
+
+
+                For more details: <a herf="https://www.geeksforgeeks.org/prime-numbers/">Click Here</a>\n
+
+    </string>
+    <string name="kmp_algo" translatable="false">
+
+            <u><b>  Knuth–Morris–Pratt algorithm </b></u><hr /> \n\n
+
+In computer science, the Knuth–Morris–Pratt string-searching algorithm (or KMP algorithm) searches for occurrences of a "word" W within a main "text string" S by employing the observation that when a mismatch occurs, the word itself embodies sufficient information to determine where the next match could begin, thus bypassing re-examination of previously matched characters.
+
+The algorithm was conceived by James H. Morris and independently discovered by Donald Knuth "a few weeks later" from automata theory. Morris and Vaughan Pratt published a technical report in 1970. The three also published the algorithm jointly in 1977. Independently, in 1969, Matiyasevich discovered a similar algorithm, coded by a two-dimensional Turing machine, while studying a string-pattern-matching recognition problem over a binary alphabet. This was the first linear-time algorithm for string matching.\n\n
+                For more details: <a herf="https://www.geeksforgeeks.org/prime-numbers/">Click Here</a>\n
+
+    </string>
+    <string name="counting_sort" translatable="false">
+        <u><b>  Counting Sort </b></u><hr /> \n\n
+
+In computer science, counting sort is an algorithm for sorting a collection of objects according to keys that are small integers; that is, it is an integer sorting algorithm. It operates by counting the number of objects that have each distinct key value, and using arithmetic on those counts to determine the positions of each key value in the output sequence. Its running time is linear in the number of items and the difference between the maximum and minimum key values, so it is only suitable for direct use in situations where the variation in keys is not significantly greater than the number of items. However, it is often used as a subroutine in another sorting algorithm, radix sort, that can handle larger keys more efficiently.
+
+Because counting sort uses key values as indexes into an array, it is not a comparison sort, and the Ω(n log n) lower bound for comparison sorting does not apply to it. Bucket sort may be used for many of the same tasks as counting sort, with a similar time analysis; however, compared to counting sort, bucket sort requires linked lists, dynamic arrays or a large amount of preallocated memory to hold the sets of items within each bucket, whereas counting sort instead stores a single number (the count of items) per bucket.\n\n
+
+                For more details: <a herf="https://www.geeksforgeeks.org/prime-numbers/">Click Here</a>\n
+
+    </string>
+    <string name="rabin" translatable="false">
+         <b>  Rabin–Karp algorithm </b>  \n\n
+ 
+
+In computer science, the Rabin–Karp algorithm or Karp–Rabin algorithm is a string-searching algorithm created by Richard M. Karp and Michael O. Rabin (1987) that uses hashing to find an exact match of a pattern string in a text. It uses a rolling hash to quickly filter out positions of the text that cannot match the pattern, and then checks for a match at the remaining positions. Generalizations of the same idea can be used to find more than one match of a single pattern, or to find matches for more than one pattern.
+
+To find a single match of a single pattern, the expected time of the algorithm is linear in the combined length of the pattern and text, although its worst-case time complexity is the product of the two lengths. To find multiple matches, the expected time is linear in the input lengths, plus the combined length of all the matches, which could be greater than linear. In contrast, the Aho–Corasick algorithm can find all matches of multiple patterns in worst-case time and space linear in the input length and the number of matches (instead of the total length of the matches).
+
+A practical application of the algorithm is detecting plagiarism. Given source material, the algorithm can rapidly search through a paper for instances of sentences from the source material, ignoring details such as case and punctuation. Because of the abundance of the sought strings, single-string searching algorithms are impractical.\n\n
+        
+          For more details: <a herf="https://www.geeksforgeeks.org/prime-numbers/">Click Here</a>\n
+    </string>
 </resources>
