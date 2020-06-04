@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/how"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <ScrollView
+        android:id="@+id/manu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginBottom="0dp">
+
+            <Button
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                android:background="#006666"
+                android:gravity="center"
+                android:onClick="prm_number"
+                android:text="@string/_1_prime_number"
+                android:textColor="#ffdd62"
+                android:textSize="@dimen/nid"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                android:background="#006666"
+                android:gravity="center"
+                android:onClick="quk_srt"
+                android:shadowColor="#ff5124"
+                android:text="@string/_2_quick_sort"
+                android:textColor="#ffdd62"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="#006666"
+                android:gravity="center"
+                android:onClick="cmpst_sers"
+                android:text="@string/_3_composite_series"
+                android:textColor="#ffdd62"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="#006666"
+                android:gravity="center"
+                android:onClick="mrg_srt"
+                android:text="@string/_4_merge_sort"
+                android:textColor="#ffdd62"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="#006666"
+                android:gravity="center"
+                android:onClick="linr_srt"
+                android:text="@string/_5_linear_search"
+                android:textColor="#ffdd62"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="#006666"
+                android:gravity="center"
+                android:onClick="fnbci_sres"
+                android:text="@string/_6_fibbonaci_series"
+                android:textColor="#ffdd62"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="#006666"
+                android:gravity="center"
+                android:onClick="bnry_srt"
+                android:text="@string/_7_binary_search"
+                android:textColor="#ffdd62"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="#006666"
+                android:gravity="center"
+                android:onClick="bble_srt"
+                android:text="@string/_8_bubble_sort"
+                android:textColor="#ffdd62"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="#006666"
+                android:gravity="center"
+                android:onClick="kmp_algo"
+                android:text="@string/_9_kmp_algorithms"
+                android:textColor="#ffdd62"
+                android:textSize="@dimen/nid"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="#006666"
+                android:gravity="center"
+                android:onClick="cuntng_srt"
+                android:text="@string/_10_counting_sort"
+                android:textColor="#ffdd62"
+                android:textSize="@dimen/nid"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="#006666"
+                android:gravity="center"
+                android:onClick="rabin_sort"
+                android:text="@string/_11_rabin_corasick"
+                android:textColor="#ffdd62"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
