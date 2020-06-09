@@ -3,4 +3,5 @@
     <dimen name="nid">24sp</dimen>
     <dimen name="doo">28sp</dimen>
     <dimen name="aa">5dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
 </resources>

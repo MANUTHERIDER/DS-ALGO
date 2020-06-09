@@ -9,11 +9,9 @@
 
     <ImageView
         android:id="@+id/minew"
-        android:layout_width="391dp"
-        android:layout_height="235dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"
         android:contentDescription="@string/todo"
         android:foregroundGravity="top"
@@ -24,16 +22,9 @@
     <ScrollView
         android:id="@+id/manu"
         android:layout_width="match_parent"
-        android:layout_height="491dp"
-        android:layout_below="@id/minew"
-        android:layout_gravity="bottom"
-        android:paddingTop="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024">
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/go7"
+        android:layout_below="@id/minew">
 
         <TextView
             android:id="@+id/text3"
@@ -44,6 +35,49 @@
             android:text="@string/fibonacci_series"
             android:textColor="#00897B"
             android:textSize="18sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold" />
     </ScrollView>
+    <Button
+        android:id="@+id/link7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/click_to_know_more"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textStyle="bold"
+        android:background="#006666"/>
+
+    <EditText
+        android:id="@+id/num7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/link7"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/find_series_out_of_first_n_numbers"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/go7"
+        android:onClick="fibbonaci"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/link7"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toEndOf="@+id/num7"
+        android:layout_toRightOf="@+id/num7"
+        android:layout_alignBaseline="@id/num7"
+        android:background="#99AAff"
+        android:text="@string/_check"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

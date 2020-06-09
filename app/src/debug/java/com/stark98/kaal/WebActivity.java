@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,37 +21,52 @@ public class WebActivity extends AppCompatActivity {
         String message = intent.getStringExtra(FourActivity.Extra_Message1);
         switch (message) {
             case "link2": {
-                webUrl = "";
+                webUrl = "https://www.geeksforgeeks.org/prime-numbers/";
+                break;
             }
             case "link3": {
-                webUrl = "";
+                webUrl = "https://www.geeksforgeeks.org/quick-sort/";
+                break;
             }
             case "link4": {
-                webUrl = "";
+                webUrl = "https://www.geeksforgeeks.org/composite-number/";
+                break;
             }
             case "link5": {
-                webUrl = "";
+                webUrl = "https://www.geeksforgeeks.org/merge-sort/";
+                break;
             }
             case "link6": {
-                webUrl = "";
+                webUrl = "https://www.geeksforgeeks.org/linear-search/";
+                break;
             }
             case "link7": {
-                webUrl = "";
+                webUrl = "https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/";
+                break;
             }
             case "link8": {
-                webUrl = "";
+                webUrl = "https://www.geeksforgeeks.org/binary-search/";
+                break;
             }
             case "link9": {
-                webUrl = "";
+                webUrl = "https://www.geeksforgeeks.org/bubble-sort/";
+                break;
             }
             case "link10": {
-                webUrl = "";
+                webUrl = "https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/";
+                break;
             }
             case "link11": {
-                webUrl = "";
+                webUrl = "https://www.geeksforgeeks.org/counting-sort/";
+                break;
             }
             case "link12": {
-                webUrl = "";
+                webUrl = "https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/";
+                break;
+            }
+            default:
+            {
+                Toast.makeText(this, "Link not Found", Toast.LENGTH_SHORT).show();
             }
         }
         webView = (WebView) findViewById(R.id.mywebView);

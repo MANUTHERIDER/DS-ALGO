@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,34 +8,80 @@
     tools:context=".SecondActivity">
 
 
-        <ImageView
-            android:id="@+id/minew"
-            android:layout_width="match_parent"
-            android:layout_height="242dp"
-            android:layout_above="@id/textView12"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="top"
-            android:foregroundGravity=""
-            android:contentDescription="@string/todo"
-            android:src="@drawable/hanoi"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/minew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/hanoi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/minew">
+        android:id="@+id/man"
+        android:layout_above="@+id/go2"
+        android:layout_below="@id/minew"
+        >
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:gravity="bottom"
+            android:gravity="top"
+            android:layout_marginBottom="5dp"
             android:background="#CDDD99"
             android:text="@string/prime_number"
             android:textColor="#00897B"
             android:textSize="18sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold" />
     </ScrollView>
-</LinearLayout>
+
+    <Button
+        android:id="@+id/link2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/click_to_know_more"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textStyle="bold"
+        android:background="#006666"/>
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/link2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="Check For Prime Number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/go2"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/link2"
+        android:layout_alignBaseline="@id/num2"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toEndOf="@+id/num2"
+        android:layout_toRightOf="@+id/num2"
+        android:background="#99AAff"
+        android:text="@string/_check"
+        android:onClick="prime_number"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
